@@ -21,3 +21,11 @@ if __name__ == "__main__":
     
     # Calling the main function with arguments
     main(args.required_arg, args.optional_arg)
+
+
+# Execute the script:
+# Passes the code to python as a string and executes it
+# python3 -c "$(wget -q -O - https://raw.githubusercontent.com/DeWildeDaan/remotepythontest/main/script2.py)" value1 --optional_arg value2
+
+# Downloads the script, exectutes it and removes it
+# wget -q https://raw.githubusercontent.com/DeWildeDaan/remotepythontest/main/script2.py && (python3 script2.py value1 --optional_arg value2; rm script2.py)
